@@ -10,7 +10,20 @@ public class Main {
 
     public static void main(String[] args) {
 
+	
+
     }
+
+   public void createPost(ResearchPaper[] top5, User user, String title, int communityId){
+	Community community = communities.get(communityId);
+	if (community.users.contains(user.getId()){
+		Post post = new Post(top5, user, title);
+		posts.put(post.getId(), post);
+		community.addPost(post);
+	}
+   }
+
+  
 
 
 }

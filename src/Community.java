@@ -26,4 +26,15 @@ public class Community {
         this.users.remove(user.getId());
     }
 
+   public void AddPost(Post post){
+   
+      this.posts.add(post.getId());
+	
+   }
+  
+   public void RemovePost(Post post){
+
+	this.posts.remove(post.getId());
+   }
+
 }
