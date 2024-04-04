@@ -28,13 +28,13 @@ public class Community {
 
    public void AddPost(Post post){
    
-      this.posts.add(post.getId());
+      this.posts.add(post.id);
 	
    }
   
    public void RemovePost(Post post){
 
-	this.posts.remove(post.getId());
+	this.posts.remove(post.id);
    }
 
 }

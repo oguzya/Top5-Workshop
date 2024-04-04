@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Post {
     static int ids = 0;
-    int id;
+    public int id;
 
     public ResearchPaper[] getTop5() {
         return top5;
